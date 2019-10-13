@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de VaR</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+      <font size="24">
+    <center>PARÁMETROS A SIMULAR</center><br><br>
+    </font>
+</head>
+<body>
+
+	<form method="POST">
+            <center>
+                 Pais:<select name="Pais">
+                      <option value="">Todos</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Panama" selected>Panama</option>
+                    </select>
+                    <br><br>
+                  Institucion: <select name="Institucion">
+                      <option value="">Todas</option>
+                      <option value="Bancolombia">Bancolombia</option>
+                      <option value="Bancolombia Panama" selected>Bancolombia Panama</option>
+                      <option value="Valores Bancolombia">Valores Bancolombia</option>
+                    </select>
+                    <br><br>
+                  Producto: <select name="Producto">
+                      <option value="">Todos</option>
+                      <option value="Moneda">Moneda</option>
+                      <option value="Renta Variable" selected>Renta Variable</option>
+                    </select>
+                    <br><br>
+                  Window: <input type="text" name="Window"><br><br>
+                  Lag: <input type="text" name="Lag"><br><br>
+                  Alpha: <input type="text" name="Alpha"><br><br>
+                  <input type="submit" value="Submit"><br>
+            </center>
+	</form>
+
+</body>
+</html>

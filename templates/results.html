@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+	<img src='{{graph1_url}}' alt="Histograma" class="center">
+	<font size="24">
+    <center>El valor en Riesgo en COP es: COP {{VaR1}}</center>
+    <center>El valor en Riesgo en % es: {{VaR2}} %</center>
+    </font>
+
+</body>
+
+</html>
