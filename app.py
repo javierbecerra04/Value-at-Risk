@@ -5,6 +5,7 @@ Created on Mon May 27 13:51:49 2019
 @author: Javier
 """
 
+#Importar las librerias a usar
 from flask import Flask, render_template,url_for
 from flask import request
 from Funciones import *
